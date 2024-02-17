@@ -1,0 +1,29 @@
+
+GET  http://localhost:3033/videos?search=node
+###
+
+POST http://localhost:3033/videos
+Content-Type: application/json
+Accept-Language: pt-BR
+
+{
+  "title":"Segundo video node",
+  "description":"inserindo o segundo um video",
+  "duration":30
+}
+
+###
+
+PUT  http://localhost:3033/videos/1
+Content-Type: application/json
+Accept-Language: pt-BR
+
+{
+  "title":"Video atualizado node",
+  "description":"atualizando o primeiro video",
+  "duration":200
+}
+
+###
+
+DELETE  http://localhost:3033/videos/7bf35263-142d-409e-bf1c-5efd483a3db7
